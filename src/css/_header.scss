@@ -1,0 +1,142 @@
+.header {
+  background: rgb(173, 173, 173);
+  background: linear-gradient(
+    180deg,
+    rgba(173, 173, 173, 1) 5%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(173, 173, 173, 0.7) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  &__wrap {
+    position: relative;
+    background: rgb(20, 20, 20);
+    border-radius: 15px;
+    background: linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 1) 0%,
+      rgba(48, 48, 35, 1) 49%,
+      rgba(51, 51, 51, 1) 100%
+    );
+    webkit-box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
+    -moz-box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
+    box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
+  }
+}
+.wrap-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.logo {
+  width: 200px;
+  padding: 16px;
+}
+.header__nav {
+  margin: -40px 0 0;
+}
+.header__nav-menu {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header__nav-item {
+  padding: 10px 40px;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  padding: 10px 0px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: -24px;
+    transform: translateY(-50%);
+    transition: 1s;
+  }
+  &:hover,
+  &:active,
+  &.link-active {
+    &:before {
+      background: #d9a941;
+    }
+  }
+}
+.header__nav-link:hover {
+  border-bottom: 2px solid #d9a941;
+  transition: 0.6s;
+}
+.header__wrap-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__content {
+  color: #d9a941;
+  font-weight: 400;
+  margin: 0 150px 60px 0;
+}
+.header__content h1 {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 90px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+  padding: 0 8px;
+}
+.header__content p {
+  font-family: "Nanum Pen Script", cursive;
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: 2.3px;
+}
+.header__content-img {
+  position: absolute;
+  max-width: 250px;
+  top: -16px;
+  right: 4%;
+}
+.social {
+  position: absolute;
+  bottom: 14%;
+  left: 6%;
+  display: flex;
+  flex-direction: column;
+  &__link {
+    text-decoration: none;
+    padding: 4px;
+  }
+  &__svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}
+.facebook {
+  &:hover {
+    fill: #1877f2;
+  }
+}
+.instagram {
+  &:hover {
+    fill: #e4405f;
+  }
+}
+.twitter {
+  &:hover {
+    fill: #1da1f2;
+  }
+}
+.viber {
+  &:hover {
+    fill: #7360f2;
+  }
+}
