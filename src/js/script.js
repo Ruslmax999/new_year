@@ -11,21 +11,12 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-var swiper = new Swiper(".mySwiper1", {
-  loop: true,
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  // watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  loop: true,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next1",
-    prevEl: ".swiper-button-prev1",
-  },
-  thumbs: {
-    swiper1: swiper2,
+
+Fancybox.bind("#gallery a", {
+  groupAll: true,
+  on: {
+    ready: (fancybox) => {
+      console.log(`fancybox #${fancybox.id} is ready!`);
+    },
   },
 });
