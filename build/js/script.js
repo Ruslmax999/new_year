@@ -470,7 +470,7 @@ module.exports =
   // eslint-disable-next-line no-new-func -- fallback
   (function () { return this; })() || Function('return this')();
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack-stream/node_modules/webpack/buildin/global.js */ "./node_modules/webpack-stream/node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -1221,7 +1221,7 @@ $({ target: 'Function', proto: true }, {
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
+/***/ "./node_modules/webpack-stream/node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/

@@ -1,2 +1,1 @@
-https://ruslmax999.github.io/exam2/build/
-Exam 2
+https://ruslmax999.github.io/new_year/build/
