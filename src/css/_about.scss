@@ -1,7 +1,11 @@
 .main-body {
   border: 5px solid #000;
   border-radius: 15px;
+  webkit-box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
+  -moz-box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
+  box-shadow: 0px 0px 30px 2px rgb(2, 2, 2);
 }
+
 .about {
   padding: 80px 0;
   position: relative;
